@@ -4,8 +4,8 @@ import { Outlet } from "react-router-dom"; // Import Outlet
 
 const Dashboard = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-white w-full h-full">
-      <div className="flex w-full px-3 gap-3 ">
+    <div className="flex justify-center items-center  bg-white w-full ">
+      <div className="flex w-full px-3 gap-3 h-screen ">
         <div className="w-[270px]">
           <Sidebar/>
         </div>
