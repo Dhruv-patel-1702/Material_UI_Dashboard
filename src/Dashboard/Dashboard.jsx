@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "../Dashboard/sidebar";
-import { Outlet } from "react-router-dom"; // Import Outlet
+import { Outlet } from "react-router-dom";
 
 const Dashboard = () => {
   return (
@@ -10,7 +10,7 @@ const Dashboard = () => {
           <Sidebar/>
         </div>
         <div className="flex-1 p-4">
-          <Outlet /> 
+          <Outlet />
         </div>
       </div>
     </div>

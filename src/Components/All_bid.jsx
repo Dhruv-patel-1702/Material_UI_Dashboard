@@ -8,9 +8,9 @@ import Navigator from "../Components/Navigator";
 
 const All_bid = () => {
   return (
-    <div>
+    <div >
       <Navigator />
-      <div className="flex w-full space-x-6 ml-4 mt-5">
+      <div className="flex w-full space-x-6 ml-4 mt-5 z-10">
         <div className="w-[48%]">
           <Grid item xs={12} sm={6} md={4}>
             <Card variant="outlined">

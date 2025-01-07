@@ -14,7 +14,7 @@ const Header = (props) => {
 
   return (
     <div>
-      <div className="flex justify-between items-center border-b-2 border-gray-500 pb-2 ">
+      <div className="flex justify-between items-center border-b-2 border-gray-500 pb-2 z-10">
         <div>
         <h1 className="text-xl font-semibold">{props.name}</h1>
         </div>
@@ -30,9 +30,9 @@ const Header = (props) => {
               </span>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative z-10">
             <div
-              className="flex items-center gap-2 border-2 border-[#b8b8b8] rounded-md p-1 cursor-pointer"
+              className="flex items-center gap-2 border-2 border-[#b8b8b8] rounded-md p-1 cursor-pointer z-10"
               onClick={() => setShowDropdown(!showDropdown)}
             >
               <PersonIcon
@@ -44,7 +44,7 @@ const Header = (props) => {
             </div>
 
             {showDropdown && (
-              <div className="absolute right-0 w-36 bg-white rounded-md shadow-lg py-1 z-10 border border-gray-200">
+              <div className="absolute right-0 w-36 bg-white rounded-md shadow-lg py-1 border border-gray-200">
                 <button
                   className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
                   onClick={() => handleOptionClick("Profile")}
